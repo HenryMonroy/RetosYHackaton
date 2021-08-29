@@ -1,5 +1,5 @@
-let peso = 75;
-let altura = 1.70;
+let peso = 80;
+let altura = 1.76;
 
 let imc = peso / (altura ** 2)
 
