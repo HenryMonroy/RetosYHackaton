@@ -15,3 +15,19 @@ let calcArea = (radius) => {
 }
 
 calcArea(3);
+
+/**
+ *      Ejercicio 02
+ */
+
+let calculateDogAge = (ageDog, rateCalc = 7) => {
+    let result = ageDog * rateCalc;
+    if(!isNaN(result))
+        console.log(`Tu perrito tiene ${result} años en años de perro!`);
+    else
+    console.log(`No se pudo calcular los años de vida de tu perrito`);
+}
+
+calculateDogAge();
+calculateDogAge(5);
+calculateDogAge(5,6.5);
