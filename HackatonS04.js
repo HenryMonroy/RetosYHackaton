@@ -32,7 +32,7 @@ promise.then(f1,f2);//en este fragmento de código se ejecuta primero f1 devolvi
  */
 
 //before
-/*function loadJson(url){
+function loadJson(url){
     return fetch(url).then(response => {
         if(response.status === 200) {
             return response.json();
@@ -42,7 +42,7 @@ promise.then(f1,f2);//en este fragmento de código se ejecuta primero f1 devolvi
     });
 }
 
-loadJson('no-such-user.json').catch(alert);*/
+loadJson('no-such-user.json').catch(alert);
 
 //after
 async function loadJson(url) {
@@ -63,16 +63,84 @@ loadJson('no-such-user.json');
 
 /**
  *      Ejercicio 04
+
+class HttpError extends Error {
+    constructor(response) {
+        super(`${response.status} for ${response.url}`);
+        this.name = 'HttpError';
+        this.response = response;
+    }
+}
+
+function loadJson(url) {
+    return fetch(url).then(response => {
+        if (response.status === 200) {
+            return response.json();
+        } else {
+            throw new HttpError(response);
+        }
+    });
+}
+
+function demoGithubUser() {
+    let name = prompt("Enter a name?", "iliakan");
+    return loadJson(`https://api.github.com/users/${name}`)
+            .then(user => {
+                alert(`Full name:${user.name}.`);
+                return user;
+            })
+            .catch(err => {
+                if (err instanceof HttpError && err.response.status === 404) {
+                    alert("No such user, please reenter.");
+                    return demoGithubUser();
+                } else {
+                    throw err;
+                }
+            });
+}
+
+demoGithubUser();
  */
 
 /**
  *      Ejercicio 05
+
+async function wait() {
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    return 10;
+}
+
+function f() {
+    
+
+    wait().then(callBackF);
+
+    return result;
+}
+
+console.log(f());
  */
 
 /**
  *      Ejercicio 06
  */
 
+new Promise(function(resolve,reject) {
+    setTimeout(() => {
+        throw new Error("Whoops!");
+    }, 1000);
+}).catch(alert);//No se activa el catch porque el setTimeout no captura el error
+
 /**
  *      Ejercicio 07
  */
+
+function printNumbers(from, to) {
+    setTimeout(() => {
+        console.log(from++);
+        if (from <= to)
+            printNumbers(from,to);
+    }, 1000);
+}
+
+printNumbers(1,9);
