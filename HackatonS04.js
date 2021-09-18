@@ -31,6 +31,36 @@ promise.then(f1,f2);//en este fragmento de código se ejecuta primero f1 devolvi
  *      Ejercicio 03
  */
 
+//before
+/*function loadJson(url){
+    return fetch(url).then(response => {
+        if(response.status === 200) {
+            return response.json();
+        } else {
+            throw new Error(response.status);
+        }
+    });
+}
+
+loadJson('no-such-user.json').catch(alert);*/
+
+//after
+async function loadJson(url) {
+    try {
+        let response = await fetch(url);
+        if(response.status === 200) {
+            let user = await response.json();
+            return alert(user);
+        } else {
+            return alert(response.status);
+        }
+    } catch (e) {
+        return alert(e);
+    }
+}
+
+loadJson('no-such-user.json');
+
 /**
  *      Ejercicio 04
  */
