@@ -32,17 +32,17 @@ promise.then(f1,f2);//en este fragmento de código se ejecuta primero f1 devolvi
  */
 
 //before
-function loadJson(url){
-    return fetch(url).then(response => {
-        if(response.status === 200) {
-            return response.json();
-        } else {
-            throw new Error(response.status);
-        }
-    });
-}
+// function loadJson(url){
+//     return fetch(url).then(response => {
+//         if(response.status === 200) {
+//             return response.json();
+//         } else {
+//             throw new Error(response.status);
+//         }
+//     });
+// }
 
-loadJson('no-such-user.json').catch(alert);
+// loadJson('no-such-user.json').catch(alert);
 
 //after
 async function loadJson(url) {
@@ -63,6 +63,7 @@ loadJson('no-such-user.json');
 
 /**
  *      Ejercicio 04
+ */
 
 class HttpError extends Error {
     constructor(response) {
@@ -72,38 +73,67 @@ class HttpError extends Error {
     }
 }
 
-function loadJson(url) {
-    return fetch(url).then(response => {
-        if (response.status === 200) {
+// function loadJson(url) {
+//     return fetch(url).then(response => {
+//         if (response.status === 200) {
+//             return response.json();
+//         } else {
+//             throw new HttpError(response);
+//         }
+//     });
+// }
+
+// function demoGithubUser() {
+//     let name = prompt("Enter a name?", "iliakan");
+//     return loadJson(`https://api.github.com/users/${name}`)
+//             .then(user => {
+//                 alert(`Full name:${user.name}.`);
+//                 return user;
+//             })
+//             .catch(err => {
+//                 if (err instanceof HttpError && err.response.status === 404) {
+//                     alert("No such user, please reenter.");
+//                     return demoGithubUser();
+//                 } else {
+//                     throw err;
+//                 }
+//             });
+// }
+
+async function loadJson(url) {
+    try {
+        let response = await fetch(url);
+        if (response.status === 200)
             return response.json();
-        } else {
+        else
             throw new HttpError(response);
-        }
-    });
+    } catch (e) {
+        return e;
+    }
 }
 
-function demoGithubUser() {
-    let name = prompt("Enter a name?", "iliakan");
-    return loadJson(`https://api.github.com/users/${name}`)
-            .then(user => {
-                alert(`Full name:${user.name}.`);
-                return user;
-            })
-            .catch(err => {
-                if (err instanceof HttpError && err.response.status === 404) {
-                    alert("No such user, please reenter.");
-                    return demoGithubUser();
-                } else {
-                    throw err;
-                }
-            });
+async function demoGithubUser() {
+    try {
+        do {
+            var name = prompt("Enter a name?", "iliakan");
+            var result = await loadJson(`https://api.github.com/users/${name}`);
+            if (result instanceof HttpError && result.response.status === 404) {
+                alert("No such user, please reenter.");
+            }
+        } while(result instanceof HttpError)
+        alert(`Full name:${result.name}.`);
+        return result;
+    } catch (err) {
+        alert(err);
+    }
+
 }
 
 demoGithubUser();
- */
 
 /**
  *      Ejercicio 05
+ */
 
 async function wait() {
     await new Promise(resolve => setTimeout(resolve, 1000));
@@ -111,15 +141,10 @@ async function wait() {
 }
 
 function f() {
-    
-
-    wait().then(callBackF);
-
-    return result;
+    wait().then(console.log);
 }
 
-console.log(f());
- */
+f();
 
 /**
  *      Ejercicio 06
