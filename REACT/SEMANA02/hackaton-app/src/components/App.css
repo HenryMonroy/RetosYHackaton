@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;600;700&display=swap');
+
 :root {
-    --primario: #FFB420;
-    --secundario: #1C65EB;
+    --primario: #FF9910;
+    --primario-suave: #FFD631;
+    --secundario: #1050BB;
+    --secundario-suave: #3DAAF7;
     --gris-claro: #727F8B;
     --gris-oscuro: #3E4254;
     --blanco: #FFFFFF;
     --negro: #000000;
-}
-
-p {
-    color: var(--gris);
 }

@@ -4,6 +4,7 @@ html{
 
 body {
     font-size: 16px;/*1rem = 10px*/
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 .container {
@@ -11,17 +12,56 @@ body {
     justify-content: space-between;
 }
 
-.partial-container-left, .partial-container-right {
+.left-bg, .right-bg {
     height: 100vh;
     width: 100%;
 }
 
-.partial-container-left {
-    background-color: var(--primario);
+/******LEFT SIDE*****/
+.left-bg {
+    background-image: linear-gradient(to top right, var(--primario), var(--primario-suave));
 }
 
-.partial-container-right {
-    background-color: var(--secundario);
+.partial-container-left {
+    margin: 5rem 10rem;
+    color: var(--blanco);
+}
+
+h1, h2 {
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+h1 {
+    margin-bottom: 30rem;
+}
+
+h2 {
+    max-width: 40rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    max-width: 35rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 10rem;
+}
+
+.sign p {
+    margin-bottom: 2.5rem;
+}
+
+.sign input {
+    max-width: 26rem;
+    width: 40rem;
+    padding: 1.75rem 2.5rem;
+    outline: transparent;
+}
+
+/******RIGHT SIDE*****/
+.right-bg {
+    background-image: linear-gradient(to top, var(--secundario), var(--secundario-suave));
 }
 
 .container-nav {
