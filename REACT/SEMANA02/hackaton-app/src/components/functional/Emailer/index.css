@@ -1,0 +1,37 @@
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;/*1rem = 10px*/
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.partial-container-left, .partial-container-right {
+    height: 100vh;
+    width: 100%;
+}
+
+.partial-container-left {
+    background-color: var(--primario);
+}
+
+.partial-container-right {
+    background-color: var(--secundario);
+}
+
+.container-nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+}

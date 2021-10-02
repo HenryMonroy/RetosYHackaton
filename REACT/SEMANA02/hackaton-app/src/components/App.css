@@ -1,0 +1,12 @@
+:root {
+    --primario: #FFB420;
+    --secundario: #1C65EB;
+    --gris-claro: #727F8B;
+    --gris-oscuro: #3E4254;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+}
+
+p {
+    color: var(--gris);
+}
