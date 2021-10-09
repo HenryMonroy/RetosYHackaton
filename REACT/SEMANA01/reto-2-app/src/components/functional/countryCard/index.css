@@ -1,0 +1,20 @@
+.items .item {
+    flex: 1 0 30rem;
+    height: 18rem;
+}
+
+.item-position {
+    width: 30rem;
+    height: 2rem;
+    position: relative;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item-image {
+    height: 20%;
+    cursor: pointer;
+}

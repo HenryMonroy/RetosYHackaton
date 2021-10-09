@@ -1,0 +1,43 @@
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;/*1rem = 10px*/
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.header {
+    display: inline-block;
+    width: 160rem;
+    margin: 0 auto;
+    padding: 5rem;
+}
+
+.header h1 {
+    width: 33%;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.header {
+    height: 10rem;
+    background-color: var(--azul-claro);
+}
+.principal {
+    height: 65rem;
+    background-color: var(--azul-oscuro);
+}
+.detalle {
+    height: 120rem;
+    background-color: #EEF0F4;
+}
+.criticas{
+    height: 100rem;
+    background-color: #E5E8EE;
+}
+.footer {
+    height: 10rem;
+    background-color: #68B6E9;
+}

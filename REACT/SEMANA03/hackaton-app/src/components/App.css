@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --azul-oscuro: #2D6FC6;
+    --azul-claro: #6AB8E9;
+    --morado-title: #5C5F77;
+    --gris-title: #A4A7B6;
+    --azul-text: #4370A7;
+    --gris-text: #505254;
+    --yellow-star: #F9CC49;
+    --yellow-button: #FAD672;
+}
