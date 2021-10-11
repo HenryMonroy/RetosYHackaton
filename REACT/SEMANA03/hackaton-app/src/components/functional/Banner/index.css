@@ -1,0 +1,12 @@
+.banner {
+    display: flex;
+
+}
+
+.left-side {
+    width: 25%;
+}
+
+.right-side {
+    width: 75%;
+}

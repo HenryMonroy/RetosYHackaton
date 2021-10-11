@@ -1,14 +1,12 @@
 import React from 'react';
+import './index.css'
 
 const CountryCard = (props) => {
     const { name, image} = props;
     return (
         <div className="item">
-            <div className="item-position">
-                <img src={image} alt={name} className="item-image"/>
-            </div>
-            <div className="item-detail">
-                <h2>{name}</h2>
+            <div className="item-position" style={{backgroundImage: `url(${image})`}}>
+                <h1 className="shadow">{name}</h1>
             </div>
         </div>
         

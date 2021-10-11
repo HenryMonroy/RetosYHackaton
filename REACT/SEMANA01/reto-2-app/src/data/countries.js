@@ -1,18 +1,18 @@
 export const countries = [
     {
         name:"Moscow",
-        image:"https://thumbs.dreamstime.com/b/moscow-russia-europe-asia-icon-vector-art-flat-shadow-design-skyline-city-silhouette-black-background-emblematic-elements-105638481.jpg",
+        image:"https://images.pexels.com/photos/236294/pexels-photo-236294.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     },
     {
         name:"Istanbul",
-        image:"https://thumbs.dreamstime.com/b/istanbul-turkey-europe-asia-icon-vector-art-flat-shadow-design-skyline-city-silhouette-black-background-emblematic-elements-105597381.jpg",
+        image:"https://images.pexels.com/photos/3999943/pexels-photo-3999943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     },
     {
         name:"Rome",
-        image:"https://thumbs.dreamstime.com/b/rome-italia-europe-euro-icon-vector-art-flat-shadow-design-skyline-city-silhouette-black-background-emblematic-elements-105591606.jpg",
+        image:"https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     },
     {
         name:"Beijing",
-        image:"https://thumbs.dreamstime.com/b/beijing-china-asia-icon-vector-art-flat-shadow-design-skyline-city-silhouette-black-background-emblematic-elements-105639672.jpg",
+        image:"https://images.pexels.com/photos/2846005/pexels-photo-2846005.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     }
 ]

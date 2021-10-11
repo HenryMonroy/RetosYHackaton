@@ -7,27 +7,14 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-.header {
-    display: inline-block;
-    width: 160rem;
+.menu-header {
     margin: 0 auto;
-    padding: 5rem;
-}
-
-.header h1 {
-    width: 33%;
-    text-transform: uppercase;
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-.header {
-    height: 10rem;
     background-color: var(--azul-claro);
 }
+
 .principal {
-    height: 65rem;
-    background-color: var(--azul-oscuro);
+    height: 100rem;
+    background: linear-gradient(to top, var(--azul-oscuro), var(--azul-claro));
 }
 .detalle {
     height: 120rem;
@@ -41,3 +28,4 @@ body {
     height: 10rem;
     background-color: #68B6E9;
 }
+

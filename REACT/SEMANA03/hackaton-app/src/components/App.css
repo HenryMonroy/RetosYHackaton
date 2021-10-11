@@ -2,11 +2,23 @@
 
 :root {
     --azul-oscuro: #2D6FC6;
+    --white-transparente: #ffffff3b;
     --azul-claro: #6AB8E9;
     --morado-title: #5C5F77;
     --gris-title: #A4A7B6;
+    --white-text: #FFFFFF;
     --azul-text: #4370A7;
     --gris-text: #505254;
     --yellow-star: #F9CC49;
     --yellow-button: #FAD672;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
