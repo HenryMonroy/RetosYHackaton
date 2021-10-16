@@ -1,11 +1,11 @@
 import React from 'react';
 import { ProductList } from '../product-list';
-import { EmployeeList } from '../employee-list';
+import { TabList } from '../tab-list';
 
 export const Home = () => (
     <>
-        <div className="container mx-auto">
-            <nav className="bg-gray-100">
+        <div className="container mx-auto bg-blue-50 h-screen">
+            <nav className="bg-transparent">
                 <div className="max-w-6xl mx-auto px-8">
                     <div className="flex justify-between">
                         <div className="md:hidden flex items-center">
@@ -32,7 +32,7 @@ export const Home = () => (
                     <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">Settings</a>
                 </div>
             </nav>
-            <div class="flex justify-between px-2 py-1 m-2 mt-9 text-gray-600 border-2 border-gray-300 rounded-3xl">
+            <div class="flex justify-between px-2 py-1 m-2 mt-9 text-gray-600 rounded-3xl bg-white shadow-md">
                 <input class="bg-white h-10 px-5 pr-16 text-sm focus:outline-none"
                        type="search" name="search" placeholder="Search"/>
                 <button type="submit" class="rounded-full bg-green-300 w-10 h-10">
@@ -40,6 +40,7 @@ export const Home = () => (
                 </button>
             </div>
             <ProductList/>
+            <TabList/>
         </div>
     </>
 );
