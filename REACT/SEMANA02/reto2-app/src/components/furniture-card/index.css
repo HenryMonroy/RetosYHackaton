@@ -1,0 +1,50 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.furniture {
+    height: 360px;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: #fff;
+}
+
+.furniture-container {
+    padding: 15px;
+}
+
+.furniture img{
+    width: 100%;
+    height: 55%;
+}
+
+.furniture-container .title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.furniture-container p {
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.furniture-container .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.furniture-container .type {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.furniture-container .price {
+    font-weight: lighter;
+    font-size: 15px;
+    border: 1px #212121 solid;
+    border-radius: 2px;
+    padding: 5px;
+}

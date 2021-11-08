@@ -1,0 +1,50 @@
+export const furnitures = [
+    {
+        id: 1,
+        name: 'Ladybug Wheelybug',
+        detail: 'Hat in felted wool eith a grosgrain band. Width of brim 4 3/4 in.',
+        type: 'FURNITURE',
+        price: '$830.21',
+        image: 'https://images.pexels.com/photos/6707628/pexels-photo-6707628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+        id: 2,
+        name: 'Ladybug Wheelybug',
+        detail: 'Hat in felted wool eith a grosgrain band. Width of brim 4 3/4 in.',
+        type: 'FURNITURE',
+        price: '$386.01',
+        image: 'https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+        id: 3,
+        name: 'Ladybug Wheelybug',
+        detail: 'Hat in felted wool eith a grosgrain band. Width of brim 4 3/4 in.',
+        type: 'FURNITURE',
+        price: '$151.73',
+        image: 'https://images.pexels.com/photos/2079246/pexels-photo-2079246.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+        id: 4,
+        name: 'Ladybug Wheelybug',
+        detail: 'Hat in felted wool eith a grosgrain band. Width of brim 4 3/4 in.',
+        type: 'FURNITURE',
+        price: '$333.54',
+        image: 'https://images.pexels.com/photos/189333/pexels-photo-189333.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+        id: 5,
+        name: 'Ladybug Wheelybug',
+        detail: 'Hat in felted wool eith a grosgrain band. Width of brim 4 3/4 in.',
+        type: 'FURNITURE',
+        price: '$184.18',
+        image: 'https://images.pexels.com/photos/1669799/pexels-photo-1669799.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    },
+    {
+        id: 6,
+        name: 'Ladybug Wheelybug',
+        detail: 'Hat in felted wool eith a grosgrain band. Width of brim 4 3/4 in.',
+        type: 'FURNITURE',
+        price: '$308.78',
+        image: 'https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    }
+]
